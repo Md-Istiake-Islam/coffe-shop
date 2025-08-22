@@ -1,30 +1,15 @@
 "use client";
 import { Eye } from "lucide-react";
-import { useEffect, useState } from "react";
-import LoadingSpinner from "./LoadingSpinner";
 import Link from "next/link";
 
-const fetchProducts = async () => {
-   const res = await fetch(`/api/products`);
-   const data = await res.json();
-   return data.data;
-};
-
-const ProductHighlight = () => {
-   const [allProducts, setAllProducts] = useState([]);
-
-   useEffect(() => {
-      const getProducts = async () => {
-         const products = await fetchProducts();
-         setAllProducts(products);
-      };
-      getProducts();
-   }, []);
-
+const ProductHighlight = ({ allProducts }) => {
    if (!allProducts || allProducts.length === 0) {
-      return <LoadingSpinner />;
+      return (
+         <div className="text-center py-20 text-gray-400">
+            No featured products yet.
+         </div>
+      );
    }
-
    return (
       <section className="py-20 bg-gray-900">
          <div className="container mx-auto px-4 sm:px-6 lg:px-12">

@@ -1,28 +1,22 @@
-"use client";
-
-import LoadingSpinner from "@/components/LoadingSpinner";
 import ProductsCard from "@/components/ProductsCard";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const fetchProducts = async () => {
-   const res = await fetch(`/api/products`);
+   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+   const res = await fetch(`${baseUrl}/api/products`);
    const data = await res.json();
    return data.data;
 };
 
-const Products = () => {
-   const [allProducts, setAllProducts] = useState([]);
-
-   useEffect(() => {
-      const getProducts = async () => {
-         const products = await fetchProducts();
-         setAllProducts(products);
-      };
-      getProducts();
-   }, []);
+const Products = async () => {
+   const allProducts = await fetchProducts();
 
    if (!allProducts || allProducts.length === 0) {
-      return <LoadingSpinner />;
+      return (
+         <div className="text-center py-20 text-gray-400">
+            No featured products yet.
+         </div>
+      );
    }
 
    return (

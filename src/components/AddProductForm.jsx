@@ -18,9 +18,11 @@ const AddProductForm = () => {
    const onSubmit = async (data) => {
       setIsLoading(true);
       // You can send this to your API or database
+      const baseUrl =
+         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
       try {
-         const res = await fetch(`/api/products`, {
+         const res = await fetch(`${baseUrl}/api/products`, {
             method: "POST",
             "Content-Type": "application/json",
             body: JSON.stringify(data),

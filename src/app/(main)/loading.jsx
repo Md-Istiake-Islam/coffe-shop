@@ -1,7 +1,7 @@
 import { Coffee } from "lucide-react";
 import React from "react";
 
-const LoadingSpinner = () => {
+const Loading = () => {
    return (
       <div
          className={`min-h-screen flex items-center justify-center fixed top-0 left-0 w-full z-[9999] bg-gray-800 `}
@@ -31,4 +31,4 @@ const LoadingSpinner = () => {
    );
 };
 
-export default LoadingSpinner;
+export default Loading;
