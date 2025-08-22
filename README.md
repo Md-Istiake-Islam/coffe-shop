@@ -47,6 +47,18 @@ bun dev
 
 Open [Live site](https://coffe-shop-dusky.vercel.app/)]
 
+# 📌 Route Summary
+
+This document provides an overview of all routes in the **Coffee Shop Next.js App**.
+
+---
+
+## Routes
+- `/` → Homepage (featured coffee items)  
+- `/products` → Full coffee menu list
+- `/dashboard` → Add a product (protected)
+- `/login` → User login page  
+- `/register` → User registration page  
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
