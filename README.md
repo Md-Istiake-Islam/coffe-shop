@@ -1,9 +1,40 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Coffee Shop ☕
 
-First, run the development server:
+A modern Coffee Shop web application built with **Next.js**, **MongoDB**, and **TailwindCSS**.  
+This app allows users to browse coffee items, place orders, and manage their accounts, while admins can manage products and view orders.  
 
+---
+
+## Features
+- Browse coffee menu with details and prices  
+- Add to cart and checkout  
+- Secure authentication  
+- Admin dashboard for managing products and orders  
+
+---
+
+## Setup & Installation
+
+## Getting Started 
+1. *8Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/coffee-shop.git
+   cd coffee-shop
+```
+```
+2. **install modules**
+  ```bash
+  npm install
+```
+3. **create .env file**
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_secret_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+
+4. **run the development server**
 ```bash
 npm run dev
 # or
@@ -14,7 +45,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://coffe-shop-dusky.vercel.app/](https://coffe-shop-dusky.vercel.app/)]
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
