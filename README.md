@@ -18,7 +18,7 @@ This app allows users to browse coffee items, place orders, and manage their acc
 ## Setup & Installation
 
 ## Getting Started 
-1. *8Clone the repository**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/coffee-shop.git
    cd coffee-shop
@@ -45,7 +45,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://coffe-shop-dusky.vercel.app/](https://coffe-shop-dusky.vercel.app/)]
+Open [Live site](https://coffe-shop-dusky.vercel.app/)]
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
