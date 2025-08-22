@@ -2,7 +2,7 @@ import { Coffee, Facebook, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
    return (
-      <footer className="bg-amber-900 text-white">
+      <footer className="bg-amber-600/40 text-white">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                {/* Logo and Description */}
@@ -11,15 +11,15 @@ export default function Footer() {
                      <Coffee className="h-8 w-8" />
                      <span className="text-xl font-bold">CoffeeShop</span>
                   </div>
-                  <p className="text-amber-200 mb-4">
+                  <p className="text-gray-300 mb-4">
                      Bringing you the finest coffee experience with premium
                      beans sourced from the best coffee regions around the
                      world.
                   </p>
                   <div className="flex space-x-4">
-                     <Facebook className="h-6 w-6 text-amber-200 hover:text-white transition-colors cursor-pointer" />
-                     <Twitter className="h-6 w-6 text-amber-200 hover:text-white transition-colors cursor-pointer" />
-                     <Instagram className="h-6 w-6 text-amber-200 hover:text-white transition-colors cursor-pointer" />
+                     <Facebook className="h-6 w-6 text-gray-300 hover:text-white transition-colors cursor-pointer" />
+                     <Twitter className="h-6 w-6 text-gray-300 hover:text-white transition-colors cursor-pointer" />
+                     <Instagram className="h-6 w-6 text-gray-300 hover:text-white transition-colors cursor-pointer" />
                   </div>
                </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
                      <li>
                         <a
                            href="/"
-                           className="text-amber-200 hover:text-white transition-colors"
+                           className="text-gray-300 text-sm hover:text-white transition-colors"
                         >
                            Home
                         </a>
@@ -38,7 +38,7 @@ export default function Footer() {
                      <li>
                         <a
                            href="/products"
-                           className="text-amber-200 hover:text-white transition-colors"
+                           className="text-gray-300 text-sm hover:text-white transition-colors"
                         >
                            All Products
                         </a>
@@ -46,7 +46,7 @@ export default function Footer() {
                      <li>
                         <a
                            href="/about"
-                           className="text-amber-200 hover:text-white transition-colors"
+                           className="text-gray-300 text-sm hover:text-white transition-colors"
                         >
                            About Us
                         </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                      <li>
                         <a
                            href="/contact"
-                           className="text-amber-200 hover:text-white transition-colors"
+                           className="text-gray-300 text-sm hover:text-white transition-colors"
                         >
                            Contact
                         </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                {/* Contact Info */}
                <div>
                   <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-                  <div className="space-y-2 text-amber-200">
+                  <div className="space-y-2 text-gray-300">
                      <p>123 Coffee Street</p>
                      <p>Bean City, BC 12345</p>
                      <p>Phone: (555) 123-4567</p>

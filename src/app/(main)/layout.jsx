@@ -2,7 +2,7 @@ import Sidebar from "@/components/Dashboard/Sidebar";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
-export default function MainLayout({ children }) {
+const MainLayout = ({ children }) => {
    return (
       <>
          <section className="sticky top-0 z-50">
@@ -12,4 +12,6 @@ export default function MainLayout({ children }) {
          <section>{children}</section>
       </>
    );
-}
+};
+
+export default MainLayout;

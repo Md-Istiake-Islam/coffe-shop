@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link
                href={"/"}
                className={
-                  "!font-nunito px-4 py-0.5 rounded-lg hover:text-primary"
+                  "!font-nunito px-4 py-0.5 rounded-lg hover:text-amber-100"
                }
             >
                Home
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link
                href={`./products`}
                className={
-                  "!font-nunito px-4 py-0.5 rounded-lg hover:text-primary"
+                  "!font-nunito px-4 py-0.5 rounded-lg hover:text-amber-100"
                }
             >
                Products
@@ -109,6 +109,18 @@ const Navbar = () => {
             <div className="flex items-center gap-8">
                <ul className="menu menu-horizontal px-1 text-lg font-medium text-gray-100 gap-1 items-center hidden lg:flex">
                   {navbarLinks}
+                  {session.data && (
+                     <li>
+                        <Link
+                           href={"/dashboard/add-product"}
+                           className={
+                              "!font-nunito px-4 py-0.5 rounded-lg hover:text-amber-100"
+                           }
+                        >
+                           Dashboard
+                        </Link>
+                     </li>
+                  )}
                </ul>
                <div>
                   {session.data ? (

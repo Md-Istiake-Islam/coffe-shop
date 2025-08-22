@@ -20,7 +20,7 @@ const AddProductForm = () => {
       // You can send this to your API or database
 
       try {
-         const res = await fetch("http://localhost:3000/api/products", {
+         const res = await fetch(`/api/products`, {
             method: "POST",
             "Content-Type": "application/json",
             body: JSON.stringify(data),
@@ -327,17 +327,16 @@ const AddProductForm = () => {
             <div className="pt-4">
                <button
                   type="submit"
-                  className="w-full coffee-gradient text-white py-3 px-6 rounded-md font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-102 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+                  className="w-full coffee-gradient text-white py-3 px-6 rounded-md font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-102 focus:outline-none focus:scale-100"
                >
                   {isLoading ? (
                      <div className="flex items-center justify-center space-x-2">
                         <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                        <span>Creating Camp...</span>
+                        <span>Adding coffee.....</span>
                      </div>
                   ) : (
-                     "Create Medical Camp"
+                     "Add Coffee Product"
                   )}
-                  Add Coffee Product
                </button>
             </div>
          </form>

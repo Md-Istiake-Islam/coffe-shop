@@ -9,8 +9,8 @@
 :root {
    --background: #ffffff;
    --foreground: #171717;
-   --coffee-primary: #8b4513;
-   --coffee-secondary: #d2691e;
+   --coffee-primary: #8b4513f8;
+   --coffee-secondary: #b45a19f3;
    --coffee-accent: #cd853f;
    --coffee-light: #f5f5dc;
    --coffee-dark: #654321;
@@ -34,7 +34,8 @@
    background: linear-gradient(
       135deg,
       var(--coffee-primary) 0%,
-      var(--coffee-secondary) 100%
+      var(--coffee-accent) 50%,
+      var(--coffee-primary) 100%
    );
 }
 

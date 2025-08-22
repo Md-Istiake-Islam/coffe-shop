@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/HeroSection";
 import ProductHighlight from "@/components/ProductHighlight";
 
-export default function Home() {
+const Home = () => {
    return (
       <div>
          <section>
@@ -16,4 +16,6 @@ export default function Home() {
          </section>
       </div>
    );
-}
+};
+
+export default Home;
