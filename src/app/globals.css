@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@plugin "daisyui" {
+   themes: light --default, dark --prefersdark;
+}
+
+:root {
+   --background: #ffffff;
+   --foreground: #171717;
+   --coffee-primary: #8b4513;
+   --coffee-secondary: #d2691e;
+   --coffee-accent: #cd853f;
+   --coffee-light: #f5f5dc;
+   --coffee-dark: #654321;
+}
+
+@theme inline {
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+   --font-sans: var(--font-geist-sans);
+   --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+   }
+}
+
+.coffee-gradient {
+   background: linear-gradient(
+      135deg,
+      var(--coffee-primary) 0%,
+      var(--coffee-secondary) 100%
+   );
+}
+
+body {
+   background: var(--background);
+   color: var(--foreground);
+   font-family: Arial, Helvetica, sans-serif;
+}
